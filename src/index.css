@@ -1,0 +1,103 @@
+/* Style for product list container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Style for individual product card */
+  .card {
+    width: calc(50% - 20px); /* Adjust width as per your layout */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:last-child {
+    margin-right: 0; /* Remove margin from last card */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Style for product image */
+  .card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Style for product name */
+  .card p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  /* Style for price */
+  .card p.price {
+    font-weight: bold;
+  }
+  
+  /* Style for file input and upload button */
+  .card input[type="file"] {
+    display: none;
+  }
+  
+  .card input[type="file"] + button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card input[type="file"] + button:hover {
+    background-color: #0056b3;
+  }
+  .product-details-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .product-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    color: #007bff; /* or any color you prefer */
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .product-quantity {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Add additional styles as needed */
+  
